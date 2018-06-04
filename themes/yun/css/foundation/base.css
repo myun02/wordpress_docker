@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    line-height:1;
+    -webkit-font-smoothing: antialiased;
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+/* フォントサイズ */
+h3 {
+  font-size: 15px;
+}
+p {
+  font-size: 13px;
+  line-height: 1.5;
+}

@@ -1,0 +1,14 @@
+/* 変数定義 */
+:root {
+  --my-color-gray: #adb8bf;
+  --my-color-yellow: #d9d900;
+  --my-color-purple: #865fac;
+
+  --tab-color-technology: #546696;
+  --tab-color-economy: #7B93A0;
+  --tab-color-market: #3D7BAC;
+  --tab-color-education: #538B6E;
+  --tab-color-carrier: #8DA64A;
+  --tab-color-culture: #C97A37;
+  --tab-color-living: #BB6969;
+}

@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* _tab-list
+---------------------------------*/
+/*doc
+
+【グローバルメニュー部品】
+
+*/
+
+
+/*==========================================
+ p-global-menu
+==========================================*/
+.p-global-menu {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid #222;
+}
+.p-global-menu .p-global-menu__tab {
+  flex-basis: 100%;
+  margin-right: 5px;
+  height: 35px;
+  border-radius: 5px 5px 0 0;
+
+  font-size: 12px;
+  line-height: 35px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.p-global-menu .p-global-menu__tab:hover {
+  opacity: 0.8;
+}
+
+.p-global-menu .p-global-menu__tab--technology {
+  background-color: var(--tab-color-technology);
+}
+.p-global-menu .p-global-menu__tab--economy {
+  background-color: var(--tab-color-economy);
+}
+.p-global-menu .p-global-menu__tab--market {
+  background-color: var(--tab-color-market);
+}
+.p-global-menu .p-global-menu__tab--education {
+  background-color: var(--tab-color-education);
+}
+.p-global-menu .p-global-menu__tab--carrier {
+  background-color: var(--tab-color-carrier);
+}
+.p-global-menu .p-global-menu__tab--culture {
+  background-color: var(--tab-color-culture);
+}
+.p-global-menu .p-global-menu__tab--living {
+  margin: 0;
+  background-color: var(--tab-color-living);
+}

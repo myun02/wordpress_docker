@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+
+
+/* article カラム設定 */
+.list-col {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+}
+.list-col-1 {
+  border: 1px solid #ccc;
+}
+.list-col-2 {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+.list-col-2 .list-item {
+  flex-basis: 50%;
+}
+.article-wrap-left-politics-list-left,
+.article-wrap-left-politics-list-right {
+  flex-basis: 50%;
+  border-bottom: 1px solid #ccc;
+}
+
+/* article罫線スタイル */
+.list-col-2 > .list-item-col-2:nth-child(odd) {
+  border-right: 1px solid #ccc;
+}
+
+
+/*
+#################################
+
+	Elements
+
+#################################
+*/
+
+/* article: 2column */
+.list-item {
+  display: flex;
+  padding: 10px;
+}
+.list-item-col-1 {
+  display: flex;
+  flex-direction: column;
+}
+.list-item-col-1:after {
+  content: '';
+  width: 100%;
+  margin: auto;
+  border: 1px dotted #ccc;
+}
+
+.list-item-col-2 {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.list-col-2 .article-wrap-left-politics-list-left {
+  border-right: 1px solid #ccc;
+}
+.list-col-2 .article-wrap-left-politics-list-right .list-item-col-2:last-child {
+  border: 0;
+}
+
+.list-item-col-2 .article-thumb {
+  margin-right: 10px;
+}
+
+/* タイトルセット */
+h3.block-title {
+  padding: 10px 15px;
+  position: relative;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  background: linear-gradient(180deg, rgba(224, 224, 224, 0) 0%, #E0E0E0 100%);
+}
+/* タイトル：過去の記事 */
+h3.block-title span {
+  position: absolute;
+  right: 15px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #999;
+}
+h3.block-title span:before {
+  content: '▶︎';
+  padding-right: 5px;
+}
+h3.block-title span a {
+  display: inline;
+}
+h3.block-title span a:hover {
+  display: inline;
+  color: #3D7BAC;
+}
+
+/* リストセクション */
+.list-section ul li {
+  padding: 10px 0 10px 15px;
+  border-bottom: 1px dotted #999;
+  background: url(../images/polygon-yellow.svg) no-repeat left center;
+}
+.list-section ul li:last-child {
+  border-bottom: 0;
+}
+.list-section ul li a {
+  font-size: 14px;
+}
+.list-section.ranking ul li {
+  padding: 10px 0;
+  background: none;
+}
+.list-section.ranking ul li:before {
+  counter-increment: count-list;
+  content: "RANK"counter(count-list);
+  position: absolute;
+  color: var(--my-color-purple);
+  font-weight: bold;
+}
+.list-section.ranking ul li a {
+  margin-left: 5em;
+}
+
+/*
+#################################
+
+  Modify
+
+#################################
+*/
+/* タイトルカラー */
+h3.block-title--gray {
+  border-left: 5px solid var(--my-color-gray);
+}
+h3.block-title--yellow {
+  border-left: 5px solid var(--my-color-yellow);
+}
+h3.block-title--purple {
+  border-left: 5px solid var(--my-color-purple);
+}
+
+/* サムネイルサイズ */
+.thumb-image--small {
+  width: 100px;
+}
+.thumb-image--xsmall {
+  width: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+#################################
+
+  Motions
+
+#################################
+*/
+/* リンクホバー */
+a.hover-yellow:hover {
+  text-decoration: underline;
+  color: #aeb104;
+}
+
+/* サムネイルホバーアニメーション */
+.article-thumb {
+  background-color: #333;
+}
+.article-thumb a {
+  opacity: 1;
+  transition: opacity .4s ease-in-out
+}
+.article-thumb a:hover {
+  opacity: 0.5;
+}
+.article-sentence-title a:hover {
+  color: #3D7BAC;
+  text-decoration: underline;
+}
+
+
+
+.article-sentence-title {
+  font-weight: bold;
+}
+.article-sentence time {
+  margin-bottom: 5px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+
+
+
+
+/*.list-col-1 .article-thumb {
+  margin-bottom: 15px;
+}
+.list-col-1 .article-sentence time {
+  margin-bottom: 10px;
+  color: #004b64;
+  font-weight: bold;
+}
+.list-col-1 .article-sentence-title {
+  text-decoration: underline;
+}
+.list-col-1 .article-sentence-text {
+  margin-top: 15px;
+  font-size: 11px;
+}
+*/
+
+
+
