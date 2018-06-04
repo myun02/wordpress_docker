@@ -12,3 +12,6 @@
   - 初回はwordpressのインストールを行う
 - テーマ開発をするときは、ブラウザをリロードするだけでテーマが反映される
 - コンテナを停止させるときは、`docker-compose down`
+
+## テーマ参考
+[http://tcd-wp.net/tcd018/](http://tcd-wp.net/tcd018/)
